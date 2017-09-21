@@ -12,33 +12,38 @@
                 max-width: 500px;
                 margin: auto;
             }
-            li {
+            #members li {
                 list-style-type: circle;
+                font-style: italic;
+            }
+            #albumcover {
+                background-image: url("images/NoBetterThanThisAlbumCover.jpg");
+                background-repeat: repeat;
+                height: 500px;
+                width: 500px;
             }
         </style>
     </head>
         <body>
         <div class="content">
-            <img src="images/NoBetterThanThisAlbumCover.jpg" 
-                alt="Picture of Album Cover" 
-                align="middle" 
-                style="width: 500px;">
+            <div id="albumcover">
+            </div>
             <div id = "overview">
-                <h1>No Better Than This</h1>
+                <h1 style='font-family:monospace'>No Better Than This</h1>
                 <h2><a href="http://www.mellencamp.com" target="_blank">John Mellencamp</a></h2>
                 <h3>August 17, 2010</h3>
             </div>
             <hr />
             <div>
-                <h2>Band Members and Producers</h2>
-                <ul>
-                    <li>John Mellencamp - Vocals and Acoustic Guitar</li>
-                    <li>Andy York - Acoustic and Electric Guitars</li>
-                    <li>Marc Ribot - Electric Guitar and Banjo</li>
-                    <li>T Bone Burnnett - Acoustic and Electric Guitars</li>
-                    <li>David Roe - Bass</li>
-                    <li>Jay Bellerose - Drums and Percussion</li>
-                    <li>Miriam Sturm - Violin</li>
+                <h2 style='font-family:monospace'>Band Members and Producers</h2>
+                <ul id = "members">
+                    <li>John Mellencamp</li>
+                    <li>Andy York</li>
+                    <li>Marc Ribot</li>
+                    <li>T Bone Burnnett</li>
+                    <li>David Roe</li>
+                    <li>Jay Bellerose</li>
+                    <li>Miriam Sturm</li>
                     <li style="font-weight: bold;">Produced by T Bone Burnnett</li>
                 </ul>
             </div>
