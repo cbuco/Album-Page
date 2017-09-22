@@ -22,6 +22,28 @@
                 height: 500px;
                 width: 500px;
             }
+            a:link {
+                text-decoration: none;
+            }
+            a:visited {
+                text-decoration: none;
+            }
+            a:hover {
+                text-decoration: underline;
+                background-color: darkgoldenrod;
+            }
+            a:active {
+                text-decoration: none;
+            }
+            tbody td {
+                font-style: italic;
+            }
+            tbody tr:nth-child(even) {
+                background-color: darkgoldenrod;
+            }
+            tbody tr:nth-child(odd) {
+                background-color: goldenrod;
+            }
         </style>
     </head>
         <body>
@@ -57,12 +79,12 @@
                        <th>Track Length</th>
                    </tr>
                 </thead>
+                <tbody>
                    <tr>
                        <td>1</td>
                        <td>Save Some Time to Dream</td>
                        <td>4:30</td>
                    </tr>
-                <tbody>
                    <tr>
                        <td>2</td>
                        <td>The West End</td>
