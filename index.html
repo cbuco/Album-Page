@@ -1,56 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>
-            John Mellencamp
-        </title>
-        <link href="albumStyles.css"
-              rel="stylesheet"
-              type="text/css" />
-        <style>
-            .content {
-                max-width: 500px;
-                margin: auto;
-            }
-            #members li {
-                list-style-type: circle;
-                font-style: italic;
-            }
-            #albumcover {
-                background-image: url("images/NoBetterThanThisAlbumCover.jpg");
-                background-repeat: repeat;
-                height: 500px;
-                width: 500px;
-            }
-            a:link {
-                text-decoration: none;
-            }
-            a:visited {
-                text-decoration: none;
-            }
-            a:hover {
-                text-decoration: underline;
-                background-color: darkgoldenrod;
-            }
-            a:active {
-                text-decoration: none;
-            }
-            tbody td {
-                font-style: italic;
-            }
-            tbody tr:nth-child(even) {
-                background-color: darkgoldenrod;
-            }
-            tbody tr:nth-child(odd) {
-                background-color: goldenrod;
-            }
-        </style>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
+            <title>
+                John Mellencamp
+            </title>
+
+                <!-- External Stylesheet -->
+                <link rel = "stylesheet"
+                type="text/css"
+                href="albumStyles.css" />
+
+                <!-- Bootstrap -->
+                <link href="bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet">
+
+            <style>
+                img {
+                    display: block;
+                    margin: auto;
+                }
+                #members li {
+                    list-style-type: circle;
+                    font-style: italic;
+                }
+                a:link {
+                    text-decoration: none;
+                }
+                a:visited {
+                    text-decoration: none;
+                }
+                a:hover {
+                    text-decoration: underline;
+                    background-color: darkgoldenrod;
+                }
+                a:active {
+                    text-decoration: none;
+                }
+                tbody td {
+                    font-style: italic;
+                }
+                tbody {
+                    background-color: goldenrod;
+                }
+                thead th {
+                    text-align: center;
+                }
+            </style>
     </head>
-        <body>
-        <div class="content">
-            <div id="albumcover">
-            </div>
-            <div id = "overview">
+    <body>
+        <div class="container">
+            <img src="images/NoBetterThanThisAlbumCover.jpg"
+                class="img-responsive img-circle"
+                height="500px">
+            <div>
                 <h1 style='font-family:monospace'>No Better Than This</h1>
                 <h2><a href="http://www.mellencamp.com" target="_blank">John Mellencamp</a></h2>
                 <h3>August 17, 2010</h3>
@@ -58,96 +62,98 @@
             <hr />
             <div>
                 <h2 style='font-family:monospace'>Band Members and Producers</h2>
-                <ul id = "members">
-                    <li>John Mellencamp</li>
-                    <li>Andy York</li>
-                    <li>Marc Ribot</li>
-                    <li>T Bone Burnnett</li>
-                    <li>David Roe</li>
-                    <li>Jay Bellerose</li>
-                    <li>Miriam Sturm</li>
-                    <li style="font-weight: bold;">Produced by T Bone Burnnett</li>
-                </ul>
+                    <ul id = "members">
+                        <li>John Mellencamp</li>
+                        <li>Andy York</li>
+                        <li>Marc Ribot</li>
+                        <li>T Bone Burnnett</li>
+                        <li>David Roe</li>
+                        <li>Jay Bellerose</li>
+                        <li>Miriam Sturm</li>
+                        <li style="font-weight: bold;">Produced by T Bone Burnnett</li>
+                    </ul>
             </div>
-            <div>
-                <table id="tracks" style="width:100%">
-                <caption>Tracks</caption>
-                <thead>
-                   <tr bgcolor="grey">
-                       <th>Track #</th>
-                       <th>Track Title</th>
-                       <th>Track Length</th>
-                   </tr>
-                </thead>
-                <tbody>
-                   <tr>
-                       <td>1</td>
-                       <td>Save Some Time to Dream</td>
-                       <td>4:30</td>
-                   </tr>
-                   <tr>
-                       <td>2</td>
-                       <td>The West End</td>
-                       <td>3:58</td>
-                   </tr>
-                   <tr>
-                       <td>3</td>
-                       <td>Right Behind Me</td>
-                       <td>4:00</td>
-                   </tr>
-                   <tr>
-                       <td>4</td>
-                       <td>A Graceful Fall</td>
-                       <td>3:20</td>
-                   </tr>
-                   <tr>
-                       <td>5</td>
-                       <td>No Better Than This</td>
-                       <td>3:12</td>
-                   </tr>
-                   <tr>
-                       <td>6</td>
-                       <td>Thinking About You</td>
-                       <td>3:28</td>
-                   </tr>
-                   <tr>
-                       <td>7</td>
-                       <td>Coming down the Road</td>
-                       <td>4:45</td>
-                   </tr>
-                   <tr>
-                       <td>8</td>
-                       <td>No One Cares About Me</td>
-                       <td>6:11</td>
-                   </tr>
-                   <tr>
-                       <td>9</td>
-                       <td>Love at First Site</td>
-                       <td>4:37</td>
-                   </tr>
-                   <tr>
-                       <td>10</td>
-                       <td>Don't Forget About Me</td>
-                       <td>3:14</td>
-                   </tr>
-                   <tr>
-                       <td>11</td>
-                       <td>Each Day of Sorrow</td>
-                       <td>2:36</td>
-                   </tr>
-                   <tr>
-                       <td>12</td>
-                       <td>Easter Eve</td>
-                       <td>6:30</td>
-                   </tr>
-                   <tr>
-                       <td>13</td>
-                       <td>Clumsy Ol' World</td>
-                       <td>3:29</td>
-                   </tr>
-                </tbody>                       
+            <div class="table-responsive">
+                <table id="tracks" style="width:100%" class="table table-striped">
+                <caption style="text-align:center">Tracks</caption>
+                    <thead>
+                        <tr bgcolor="grey">
+                            <th>Track #</th>
+                            <th>Track Title</th>
+                            <th>Track Length</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Save Some Time to Dream</td>
+                            <td>4:30</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>The West End</td>
+                            <td>3:58</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Right Behind Me</td>
+                            <td>4:00</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>A Graceful Fall</td>
+                            <td>3:20</td>
+                        </tr>
+                        <tr>
+                            <td>5</td>
+                            <td>No Better Than This</td>
+                            <td>3:12</td>
+                        </tr>
+                        <tr>
+                            <td>6</td>
+                            <td>Thinking About You</td>
+                            <td>3:28</td>
+                        </tr>
+                        <tr>
+                            <td>7</td>
+                            <td>Coming down the Road</td>
+                            <td>4:45</td>
+                        </tr>
+                        <tr>
+                            <td>8</td>
+                            <td>No One Cares About Me</td>
+                            <td>6:11</td>
+                        </tr>
+                        <tr>
+                            <td>9</td>
+                            <td>Love at First Site</td>
+                            <td>4:37</td>
+                        </tr>
+                        <tr>
+                            <td>10</td>
+                            <td>Don't Forget About Me</td>
+                            <td>3:14</td>
+                        </tr>
+                        <tr>
+                            <td>11</td>
+                            <td>Each Day of Sorrow</td>
+                            <td>2:36</td>
+                        </tr>
+                        <tr>
+                            <td>12</td>
+                            <td>Easter Eve</td>
+                            <td>6:30</td>
+                        </tr>
+                        <tr>
+                            <td>13</td>
+                            <td>Clumsy Ol' World</td>
+                            <td>3:29</td>
+                        </tr>
+                    </tbody>                       
                 </table>
-                </div>
-        </div>    
-        </body>
+            </div>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
